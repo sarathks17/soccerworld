@@ -1,0 +1,259 @@
+
+.home-container {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .imgtext-content img {
+    display: block; 
+    width: 93%;
+    height: auto;
+    border-radius: 25px;
+    position: relative;
+    left: 4%;
+ 
+  }
+  .imgtext-content span {
+    position: absolute;
+    width: 94%;
+    font-size: 10.3rem;
+    top: 4%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    text-align: center; 
+    border-radius: 5px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  .optional-buttons{
+    position: absolute;
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    width: 20%;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    text-align: center; 
+    cursor: pointer;
+  }
+  .optional-buttons:hover{
+    color: rgb(191, 0, 191);
+   border: none;
+  }
+ .socialmedia-icons{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+ }
+
+ .socialmedia-icons ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    padding: 0;
+ }
+ .socialmedia-icons ul li{
+    color: #fff;
+    font-size: 35px;
+    border-radius: 15px;
+ }
+ .socialmedia-icons ul li svg{
+    border-radius: 25px;
+ }
+ .heading-section{
+    color: #fff;
+ }
+ .heading-section p{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 5rem;
+    margin-bottom: 5%;
+   
+ }
+ .newsupdate-sections{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+ }
+ .newsupdate-sections .left-section{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   background-color: #000;
+   height: 60vh;
+   width: 40%;
+  
+ }
+ .newsupdate-sections .right-section{
+   background-color: red;
+   height: 60vh;
+   width: 40%;
+ }
+ .newsupdate-sections .right-section img{
+   width: 100%;
+   height: 60vh;
+ }
+ .newsupdate-sections .left-section .news-one{
+   height: 12vh;
+   color: #fff;
+   text-align: center;
+   padding-top: 5px;
+   transition: transform 0.3s ease, color 0.3s ease;
+
+ }
+ .newsupdate-sections .left-section .news-one:hover{
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(34, 8, 52), rgb(120, 60, 176));
+  transform: scale(1.2);
+  border-radius: 25px;
+ }
+ .newsupdate-sections .left-section .news-two{
+   border-radius: 25px;
+   height: 12vh;
+   color: #fff;
+   text-align: center;
+   padding-top: 5px;
+   transition: transform 0.3s ease, color 0.3s ease;
+ }
+ .newsupdate-sections .left-section .news-two:hover{
+   cursor: pointer;
+   background: linear-gradient(to right, rgb(34, 8, 52), rgb(120, 60, 176));
+   transform: scale(1.2);
+  }
+ .newsupdate-sections .left-section .news-three{
+   border-radius: 25px;
+   height: 12vh;
+  
+   color: #fff;
+   text-align: center;
+   padding-top: 5px;
+   transition: transform 0.3s ease, color 0.3s ease;
+ }
+ .newsupdate-sections .left-section .news-three:hover{
+   cursor: pointer;
+   background: linear-gradient(to right, rgb(34, 8, 52), rgb(120, 60, 176));
+   transform: scale(1.2);
+  
+  }
+ .newsupdate-sections .left-section .news-four{
+   border-radius: 25px;
+   height: 12vh;
+   color: #fff;
+   
+   text-align: center;
+   padding-top: 5px;
+   transition: transform 0.3s ease, color 0.3s ease;
+ }
+ .newsupdate-sections .left-section .news-four:hover{
+   cursor: pointer;
+   background: linear-gradient(to right, rgb(34, 8, 52), rgb(120, 60, 176));
+   transform: scale(1.2);
+  }
+  .newsupdate-sections .right-section .slide-display img{
+   width: 100%;
+   height: 60vh;
+  }
+  .newsupdate-sections .right-section video{
+   width: 100%;
+   height: 60vh;
+  }
+  .trainsection-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .trainsection-text h2{
+    color: #fff;
+    font-size: 3rem;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  .trainsection-text p{
+    color: #fff;
+    font-size: 16px;
+    width: 70%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .training-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3%;
+    padding-bottom: 3%;
+   
+  }
+  .training-items h2{
+    font-size: 2.1rem;
+    padding: 10px;
+    text-align: start;
+    color: #fff;
+    left: 0;
+  }
+  .training-items h4{
+    font-size: 16px;
+    color: #fff;
+  }
+  .training-items button{
+    height: 4.5vh;
+    width: 6.5rem;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+  }
+  .training-items button:hover{
+    background: linear-gradient(to right, rgb(230, 236, 55), rgb(243, 232, 72));
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+  hr{
+    width: 85%;
+    position: relative;
+    left: 10%;
+  }
+  .all-class-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+  }
+  .all-class-btn .main-btn{
+    height: 7vh;
+    width: 9.5rem;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background-color: #000;
+  }
+  button .second-btn{
+    height: 5vh;
+    width: 8rem;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out, color 0.3s ease;
+    border-radius: 25px;
+  }
+  button .second-btn:hover{
+    background: linear-gradient(to right, rgb(209, 230, 50), rgb(220, 241, 60));
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transform: scale(1.1);
+  }

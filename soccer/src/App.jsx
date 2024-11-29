@@ -17,8 +17,6 @@ const App = () => {
         <Route path='/contact-us' element={<Contact/>} />
         <Route path='/join' element={<Join/>} />
         <Route path='/login' element={<Login/>} />
-
-      
       </Routes>
     </div>
   )
