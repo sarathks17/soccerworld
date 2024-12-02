@@ -4,8 +4,8 @@
     display: inline-block; 
   }
   
-  .imgtext-content img {
-    display: block; 
+  .imgtext-content video {
+    /* display: block;  */
     width: 93%;
     height: auto;
     border-radius: 25px;
@@ -17,7 +17,7 @@
     position: absolute;
     width: 94%;
     font-size: 10.3rem;
-    top: 4%;
+    top: 1.5%;
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #fff;
@@ -28,25 +28,9 @@
     
   }
   .optional-buttons{
-    position: absolute;
-    top: 10%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    width: 20%;
-    height: 35px;
-    border-radius: 25px;
-    border: none;
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
-    text-align: center; 
-    cursor: pointer;
+  display: none;
   }
-  .optional-buttons:hover{
-    color: rgb(191, 0, 191);
-   border: none;
-  }
+ 
  .socialmedia-icons{
     display: flex;
     margin-top: 30px;
@@ -104,6 +88,8 @@
    height: 60vh;
  }
  .newsupdate-sections .left-section .news-one{
+  border: 2px solid #fff;
+    border-radius: 25px;
    height: 12vh;
    color: #fff;
    text-align: center;
@@ -113,11 +99,13 @@
  }
  .newsupdate-sections .left-section .news-one:hover{
   cursor: pointer;
-  background: linear-gradient(to right, rgb(34, 8, 52), rgb(120, 60, 176));
+  background-color: rgb(221, 130, 40);
   transform: scale(1.2);
   border-radius: 25px;
  }
  .newsupdate-sections .left-section .news-two{
+  border: 2px solid #fff;
+    border-radius: 25px;
    border-radius: 25px;
    height: 12vh;
    color: #fff;
@@ -127,10 +115,12 @@
  }
  .newsupdate-sections .left-section .news-two:hover{
    cursor: pointer;
-   background: linear-gradient(to right, rgb(34, 8, 52), rgb(120, 60, 176));
+   background-color: rgb(221, 130, 40);
    transform: scale(1.2);
   }
  .newsupdate-sections .left-section .news-three{
+  border: 2px solid #fff;
+    border-radius: 25px;
    border-radius: 25px;
    height: 12vh;
   
@@ -141,11 +131,13 @@
  }
  .newsupdate-sections .left-section .news-three:hover{
    cursor: pointer;
-   background: linear-gradient(to right, rgb(34, 8, 52), rgb(120, 60, 176));
+   background-color: rgb(221, 130, 40);
    transform: scale(1.2);
   
   }
  .newsupdate-sections .left-section .news-four{
+  border: 2px solid #fff;
+    border-radius: 25px;
    border-radius: 25px;
    height: 12vh;
    color: #fff;
@@ -156,7 +148,7 @@
  }
  .newsupdate-sections .left-section .news-four:hover{
    cursor: pointer;
-   background: linear-gradient(to right, rgb(34, 8, 52), rgb(120, 60, 176));
+   background-color: rgb(221, 130, 40);
    transform: scale(1.2);
   }
   .newsupdate-sections .right-section .slide-display img{
@@ -216,7 +208,7 @@
     transition: transform 0.3s ease-in-out, color 0.3s ease;
   }
   .training-items button:hover{
-    background: linear-gradient(to right, rgb(230, 236, 55), rgb(243, 232, 72));
+    background-color: rgb(221, 130, 40);
     color: #000;
     cursor: pointer;
     font-weight: bold;
@@ -232,6 +224,8 @@
     align-items: center;
     justify-content: center;
     padding-top: 2%;
+    height: 100%;
+    padding-bottom: 5%;
   }
   .all-class-btn .main-btn{
     height: 7vh;
@@ -251,9 +245,274 @@
     border-radius: 25px;
   }
   button .second-btn:hover{
-    background: linear-gradient(to right, rgb(209, 230, 50), rgb(220, 241, 60));
+    background-color: rgb(221, 130, 40);
     cursor: pointer;
     color: #000;
     font-weight: bold;
     transform: scale(1.1);
   }
+ .trainers-details-text{
+  padding-top: 1%;
+  width: 100%;
+ }
+ .trainers-details-text h1{
+  font-size: 24rem;
+  color: #fff;
+  text-align: center;
+  font-family: fantasy;
+  line-height: 335px;
+
+ }
+ .trainer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-top: 5%;
+ margin-left: 5%;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(221, 130, 40);
+  padding-bottom: 2%;
+  border-radius: 15px;
+  
+ }
+ .trainer-container h3{
+  color: #000;
+  background-color: transparent;
+  font-size: 2rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+ }
+ .trainer-container img{
+  width: 90%;
+  height: 45vh;
+  border-radius: 15px;
+ }
+ .trainer-container h4{
+  font-size: 1.5rem;
+  color: #000;
+  background-color: transparent;
+  padding-top: 5px;
+  font-weight: bold;
+ 
+ }
+ .trainer-container p{
+  font-size: 18px;
+  color: #000;
+  background-color: transparent;
+  padding-top: 5px;
+  width: 85%;
+ }
+ 
+ .trainer-containersecond{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-top: 5%;
+ margin-left: 5%;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(221, 130, 40);
+  padding-bottom: 2%;
+  border-radius: 15px;
+  
+ }
+ .trainer-containersecond h3{
+  color: #000;
+  background-color: transparent;
+  font-size: 2rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+ }
+ .trainer-containersecond img{
+  width: 90%;
+  height: 45vh;
+  border-radius: 15px;
+ }
+ .trainer-containersecond h4{
+  font-size: 1.5rem;
+  color: #000;
+  background-color: transparent;
+  padding-top: 5px;
+  font-weight: bold;
+ 
+ }
+ .trainer-containersecond p{
+  font-size: 18px;
+  color: #000;
+  background-color: transparent;
+  padding-top: 5px;
+  width: 85%;
+ }
+ .trainer-maincontainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2%;
+  padding-right: 2%;
+ }
+ .trainer-containerthird{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-top: 5%;
+ margin-left: 5%;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(221, 130, 40);
+  padding-bottom: 2%;
+  border-radius: 15px;
+  
+ }
+ .trainer-containerthird h3{
+  color: #000;
+  background-color: transparent;
+  font-size: 2rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+ }
+ .trainer-containerthird img{
+  width: 90%;
+  height: 45vh;
+  border-radius: 15px;
+ }
+ .trainer-containerthird h4{
+  font-size: 1.5rem;
+  color: #000;
+  background-color: transparent;
+  padding-top: 5px;
+  font-weight: bold;
+ 
+ }
+ .trainer-containerthird p{
+  font-size: 18px;
+  color: #000;
+  background-color: transparent;
+  padding-top: 5px;
+  width: 85%;
+ }
+ .trainer-maincontainerthird{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 2%;
+  padding-right: 3%;
+ }
+ .fooball-journytext{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+ }
+ .fooball-journytext h1{
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 2%;
+  font-weight: bold;
+ }
+ .fooball-journytext p{
+  font-size: 14px;
+  font-family: system-ui;
+  color: #fff;
+  font-weight: bold;
+  width: 60%;
+  text-align: center;
+  padding-bottom: 3%;
+ }
+ .soccerimagesix-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+ }
+ .soccerimagesix-container img{
+  width: 85%;
+ }
+ .download-section{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  background: #f6eeee;
+ }
+ .download-section .left-downloadsection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background: #f6eeee;
+  color: #000;
+ }
+ .download-section .left-downloadsection h1{
+  font-size: 2rem;
+  color: #000;
+  background: #f6eeee;
+ }
+ .download-section .left-downloadsection p{
+  font-size: 18px;
+  color: #000;
+  background: #f6eeee;
+  padding-top: 2%;
+  padding-bottom: 2%;
+ }
+ .download-section .right-downloadsection{
+  width: 50%;
+  background: #f6eeee;
+  color: #000;
+  position: relative;
+ }
+ .download-btn{
+  display: flex;
+  gap: 20px;
+  background: #f6eeee;
+  width: 50%;
+ }
+ .download-btn img{
+  height: 6vh;
+    width: 40%;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease, color 0.3s ease;
+ }
+ .download-btn img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+ }
+ .right-downloadsection img{
+  width: 45%;
+  border-radius: 15px;
+ }
+ .right-downloadsection video{
+  width: 25%;
+  position: absolute;
+  left: 10%;
+  top: 18.5%;
+  height: 53.1vh;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  
+ }
+ .innertext-container{
+  display: flex;
+  flex-direction: column;
+  background: #f6eeee;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+ }
+ .coachimage-container{
+  width: 50%;
+  position: absolute;
+ }

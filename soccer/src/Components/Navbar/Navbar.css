@@ -29,7 +29,7 @@
 }
 .headings ul li:hover{
     transform: scale(1.2);
-    color: mediumorchid; 
+    color: rgb(221, 130, 40);
 }
 .login-section{
     width: 100px;
@@ -52,7 +52,7 @@
 }
 .login-section h4:hover{
     transform: scale(1.2);
-    color: mediumorchid;
+    color: rgb(221, 130, 40);
     background-color: black;
 }
 .login-section img{
@@ -65,7 +65,7 @@
    text-decoration: none;
 }
 .headings ul a.active{
-    color: rgb(191, 0, 191);
+    color: rgb(221, 130, 40);
     padding-bottom: 2px;
-    border-bottom: 2px solid rgb(191, 0, 191);
+    border-bottom: 2px solid #fff;
 }

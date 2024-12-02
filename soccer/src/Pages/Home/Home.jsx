@@ -1,17 +1,28 @@
 import React from 'react'
-import mainimage from '../../assets/soccerimageone.jpg';
 import { FaSquareInstagram } from "react-icons/fa6";
 import { ImFacebook2 } from "react-icons/im";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import slide_section from '../../assets/FirstSlideSection.js'
 import './Home.css'
 import 'react-slideshow-image/dist/styles.css';
 import foodball_video from '../../assets/footballvideo.mp4'
+import trainerone from '../../assets/traineroneimage.webp'
+import trainertwo from '../../assets/trainertwoimage.webp'
+import trainerthree from '../../assets/trainerthreeimage.webp'
+import soccergif from '../../assets/soccer-gif.mp4'
+import soccerimagesix from '../../assets/soccerimagesix.jpg'
+import googleplay from '../../assets/Google-play.png'
+import applestore from '../../assets/apple-store.png'
+import footballscreen from '../../assets/phonescreen.png'
+import phonescreenvideo from '../../assets/phonescreenvideo.mp4'
+import arrow from '../../assets/arrow.gif'
 const Home = () => {
   return (
     <div className='home-container'>
       <div className="imgtext-content">
-      <img src={mainimage} alt="" />
+      <video width="100%" height="auto" autoPlay loop muted>
+  <source src={soccergif} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
       <span>SOCCER WROLD</span>
        <button className='optional-buttons'>Join Our Team</button>
       </div>
@@ -70,7 +81,74 @@ const Home = () => {
      <div className='all-class-btn'>
       <button className='main-btn'><button className='second-btn'>All Classes</button></button>
      </div>
+     <div className='trainers-details-text'>
+      <h1>MEET OUR</h1>
+      <h1>TRAINERS</h1>
+     </div>
+     <div className='trainer-container'>
+      <h3>JORDAN</h3>
+      <img src={trainerone} alt="" />
+      <h4>Strength Specialist</h4>
+      <p>This is the space to introduce the business’s team and what makes it special.</p>
+     </div>
+     <div className='trainer-maincontainer'>
+     <div className='trainer-containersecond'>
+      <h3>JORDAN</h3>
+      <img src={trainertwo} alt="" />
+      <h4>Strength Specialist</h4>
+      <p>This is the space to introduce the business’s team and what makes it special.</p>
+     </div>
+     </div>
+     <div className='trainer-maincontainerthird'>
+     <div className='trainer-containerthird'>
+      <h3>JORDAN</h3>
+      <img src={trainerthree} alt="" />
+      <h4>Strength Specialist</h4>
+      <p>This is the space to introduce the business’s team and what makes it special.</p>
+     </div>
+     </div>
+     <div className='all-class-btn'>
+      <button className='main-btn'><button className='second-btn'>All Trainers</button></button>
+     </div>
+     <div className='fooball-journytext'>
+      <h1>KICK-START YOUR FOOTBALL JOURNEY</h1>
+      <p>Discover a passion for the beautiful game at our academy. We’re dedicated to nurturing talent, building skills, and fostering teamwork in a supportive and dynamic environment. Whether you’re aiming to go pro or simply love the sport, our expert coaching and state-of-the-art facilities make us the perfect choice to achieve your goals. Join us and be part of a winning team!</p>
+     </div>
+     <hr />
+     <div className='soccerimagesix-container'>
+      <img src={soccerimagesix} alt="" />
+     </div>
+     <div className='download-section'>
+      <div className='left-downloadsection'><h1>DOWNLOAD OUR APP</h1>
+      <p>Use this space to promote the<br/>business, its products or its services.</p>
+      <div className='download-btn'>
+      <img src={googleplay} alt="" />
+      <img src={applestore} alt="" />
+      </div>
+      <div className='innertext-container'>
+      <h1>CALL TO ACTION</h1>
+      <p>Don’t wait—download our app today and kickstart your football journey!</p>
+      <p>Available on Android and iPhone. Download now and become part of our growing academy family.</p>
+      <p>Step onto the field with confidence. Get the app now and make every moment count!</p>
+      <p>Empowering players to dream, achieve, and inspire. Join us today</p>
+      </div>
       
+      </div>
+      <div className='right-downloadsection'>
+        <img src={footballscreen} alt="" />
+        <video width="100%" height="auto" autoPlay loop muted>
+        <source src={phonescreenvideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      
+       
+     
+     
+    
+      
+      </div>
+     </div>
+    
     </div>
      
  
