@@ -1,0 +1,117 @@
+.classes-container{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+ width: 100%;
+ height: 80vh;
+ padding-top: 2%;
+}
+.classesinfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+   width: 20%;
+   height: 65vh;
+   background-color: rgb(221, 130, 40);
+   border-radius: 15px;
+   transition: transform 0.2s ease-in-out;
+}
+.classesinfo:hover{
+    transform: scale(1.1);
+}
+.classesinfo h1{
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: transparent;
+    text-align: center;
+}
+.classesinfo h2{
+    font-size: 1.5rem;
+  color: #000;
+    font-weight: bold;
+    background-color:transparent;
+}
+.classesinfo span{
+    font-size: 1.5rem;
+    color:  rgb(243, 8, 8);
+    font-weight: bold;
+    background-color: transparent;
+}
+.classesinfo img{
+    width: 90%;
+    height: 30vh;
+    border-radius: 10px;
+}
+.classesinfo p{
+    font-size: 1rem;
+    color: #000;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    font-family:serif;
+}
+@media(max-width:1267px){
+    .classes-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      place-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 15px;
+        /* padding-left: 5%; */
+        padding-bottom: 3%;
+    }
+    .classesinfo{
+        width: 50%;
+        height: 65vh;
+       padding: 10px;
+    }
+}
+@media(max-width:1150px){
+    .classesinfo h1{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width:859px){
+    .classesinfo span{
+        font-size: 1rem;
+    }
+}
+@media(max-width:733px){
+   .classes-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 6px;
+    padding-bottom: 2%;
+   }
+   .classesinfo{
+    width: 50%;
+    height: 60vh;
+   padding: 10px;
+}
+}
+@media(max-width:455px){
+    .classesinfo{
+        height: 50vh;
+      
+    }
+    .classesinfo h1{
+        font-size: 16px;
+    }
+    .classesinfo h2{
+        font-size: 14px;
+    }
+    .classesinfo p{
+        font-size: 12px;
+    }
+    .classesinfo img{
+        width: 10rem;
+        height: 25vh;
+    }
+}

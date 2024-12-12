@@ -45,6 +45,19 @@
     background-color: #000;
     color: #fff;
 }
+.login-section h3 a{
+   font-size: 1.2rem;
+   
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+.login-section h3 a:hover{
+ transform: scale(1.2);
+ color: rgb(221, 130, 40);
+
+}
 .login-section h4{
     
     font-size: 18px;
@@ -68,4 +81,14 @@
     color: rgb(221, 130, 40);
     padding-bottom: 2px;
     border-bottom: 2px solid #fff;
+}
+@media(max-width:805px){
+    .headings ul{
+        gap: 20px;
+    }
+}
+@media(max-width:637px){
+   .navbar-container{
+    display: none;
+   }
 }

@@ -1,0 +1,164 @@
+.appdownload-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+.appdownload-container .leftsection{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #000;
+  height: 50vh;
+  width: 40%;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  transition: transform 0.2s ease-in-out;
+}
+.appdownload-container .leftsection:hover{
+ transform: scale(1.2);
+}
+.appdownload-container .rightsection{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #000;
+  height: 50vh;
+  width: 40%;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  transition: transform 0.2s ease-in-out;
+}
+.appdownload-container .rightsection:hover{
+  transform: scale(1.2);
+}
+ .appdownload-container .leftsection h1{
+  color: #fff;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.appdownload-container .leftsection p{
+  color: #fff;
+  background-color: transparent;
+  font-size: 18px;
+  width: 60%;
+}
+.leftsection-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+}
+.leftsection-btn button{
+  height: 5vh;
+  width: 16rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+.leftsection-btn button:hover{
+  transform: scale(1.2);
+  background-color: rgb(221, 130, 40);
+  color: #000;
+  cursor: pointer;
+}
+ .appdownload-container .rightsection h1{
+  color: #fff;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.appdownload-container .rightsection p{
+  color: #fff;
+  background-color: transparent;
+  font-size: 18px;
+  width: 60%;
+}
+.rightsection-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+}
+.rightsection-btn button{
+  height: 5vh;
+  width: 16rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+.rightsection-btn button:hover{
+  transform: scale(1.2);
+  background-color: rgb(221, 130, 40);
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width:1238px){
+  .appdownload-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .appdownload-container .rightsection{
+    height: 30vh;
+  }
+  .appdownload-container .leftsection{
+    height: 30vh;
+  }
+  .appdownload-container .rightsection p{
+   display: none;
+  }
+  .appdownload-container .rightsection h1{
+   font-size: 1rem;
+  }
+  .appdownload-container .leftsection p{
+   display: none;
+  }
+  .appdownload-container .leftsection h1{
+    font-size: 1rem;
+  }
+}
+@media (max-width:680px){
+  .leftsection-btn button{
+    width: 10rem;
+    font-size: 14px;
+  }
+  .rightsection-btn button{
+    width: 10rem;
+    font-size: 14px;
+  }
+}
+@media (max-width:550px){
+ 
+  .leftsection h1{
+    text-align: center;
+  }
+  .rightsection h1{
+    text-align: center;
+  }
+}
+@media (max-width:423px){
+  .leftsection-btn button{
+   width: 90px;
+   font-size: 12px;
+  }
+  .rightsection-btn button{
+   width: 90px;
+   font-size: 12px;
+  }
+}

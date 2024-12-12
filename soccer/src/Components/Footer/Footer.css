@@ -1,0 +1,131 @@
+.email-container{
+    padding-top: 5%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .email-container h1{
+    font-size: 3rem;
+    color: #fff;
+  }
+  .email-container label{
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .email-section{
+    padding-top: 3%;
+  }
+  .email-section input{
+    border:none;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 16rem;
+    height: 5vh;
+    color: #000;
+    padding: 2px;
+  }
+  .email-container button{
+    width: 8rem;
+    font-size: 1rem;
+    height: 4vh;
+    color: #fff;
+    margin-left: 7px;
+    background-color: rgb(221, 130, 40);
+    border-radius: 15px;
+    border: 2px solid #fff;
+    transition: transform 0.2s ease-in-out, color 0.3s ease;
+  }
+  .email-container button:hover{
+    cursor: pointer;
+    color: #000;
+    transform: scale(1.1);
+    font-weight: bold;
+  }
+  .footer-container{
+    width: 100%;
+    padding-top: 5%;
+    margin-top: 10px;
+  }
+  .footer-elements{
+    display: flex;
+      align-items: start;
+      justify-content: space-evenly;
+    width: 80%;
+  }
+  .footer-elements ul{
+    list-style: none;
+    text-decoration: none;
+  }
+  .footer-elements ul li{
+    font-size: 20px;
+    color: #fff;
+    line-height: 60px;
+    transition: transform 0.2s ease-in-out, color 0.3s ease;
+  }
+  .footer-elements ul li:hover{
+    cursor: pointer;
+    color: rgb(221, 130, 40);
+    transform: scale(1.1);
+  }
+  .copyright-text p{
+    color: #fff;
+    font-size: 18px;
+    padding-top: 2%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .socialmedia-logos{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+  }
+  .socialmedia-logos ul{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    font-size: 2rem;
+    list-style: none;
+  }
+  .socialmedia-logos ul li{
+    transition: 0.2s ease-in-out, color 0.2s ease;
+  }
+  .socialmedia-logos ul li:hover{
+    transform: scale(1.2);
+    color: rgb(221, 130, 40);
+    cursor: pointer;
+  }
+  @media (max-width:1259px){
+    .footer-container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (max-width:565px){
+   .email-container h1{
+    font-size: 2rem;
+   }
+  }
+  @media (max-width:395px){
+   .email-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+   }
+  }
+  @media (max-width:654px){
+   .footer-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+   }
+  }
+  
+   
+  

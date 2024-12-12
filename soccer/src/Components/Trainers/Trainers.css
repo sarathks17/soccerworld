@@ -1,0 +1,302 @@
+.trainers-details-text{
+    background-image: url('../../assets/MEETTRAINERS.png');
+    padding-top: 1%;
+    width: 100%; 
+    min-height: 100vh; 
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%; 
+   }
+   /* .trainers-details-text h1{
+    font-size: 24rem;
+    color: #fff;
+    text-align: center;
+    font-family: fantasy;
+    line-height: 335px;
+  
+   } */
+   .trainer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-top: 5%;
+   margin-left: 5%;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(221, 130, 40);
+    padding-bottom: 2%;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+   }
+   .trainer-container:hover{
+    transform: scale(1.1);
+   }
+   .trainer-container h3{
+    /* color: #000; */
+    background-color: transparent;
+    font-size: 2rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+   }
+   .trainer-containermain h3{
+    /* color: #000; */
+    background-color: transparent;
+    font-size: 2rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+   }
+   .trainer-container img{
+    width: 90%;
+    height: 45vh;
+    border-radius: 15px;
+   }
+   .trainer-container h4{
+    font-size: 1.5rem;
+    /* color: #000; */
+    background-color: transparent;
+    padding-top: 5px;
+    font-weight: bold;
+   
+   }
+   .trainer-container p{
+    font-size: 18px;
+    /* color: #000; */
+    background-color: transparent;
+    padding-top: 5px;
+    width: 85%;
+   }
+   
+   /* .trainer-containersecond{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-top: 5%;
+   margin-left: 5%;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(221, 130, 40);
+    padding-bottom: 2%;
+    border-radius: 15px;
+    
+   } */
+
+   .trainer-containermain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-top: 5%;
+   margin-left: 5%;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(221, 130, 40);
+    padding-bottom: 2%;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+   }
+   .trainer-containermain:hover{
+    transform: scale(1.1);
+   }
+   .trainer-container h3{
+    /* color: #000; */
+    background-color: transparent;
+    font-size: 2rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+   }
+   .trainer-containermain img{
+    width: 90%;
+    height: 45vh;
+    border-radius: 15px;
+   }
+   .trainer-containermain h4{
+    font-size: 1.5rem;
+    /* color: #000; */
+    background-color: transparent;
+    padding-top: 5px;
+    font-weight: bold;
+   
+   }
+   .trainer-containermain p{
+    font-size: 18px;
+    /* color: #000; */
+    background-color: transparent;
+    padding-top: 5px;
+    width: 85%;
+   }
+
+
+
+   .trainer-containersecond h3{
+    /* color: #000; */
+    background-color: transparent;
+    font-size: 2rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+   }
+   .trainer-containersecond img{
+    width: 90%;
+    height: 45vh;
+    border-radius: 15px;
+   }
+   .trainer-containersecond h4{
+    font-size: 1.5rem;
+    color: #000;
+    background-color: transparent;
+    padding-top: 5px;
+    font-weight: bold;
+   
+   }
+   .trainer-containersecond p{
+    font-size: 18px;
+    color: #000;
+    background-color: transparent;
+    padding-top: 5px;
+    width: 85%;
+   }
+   .trainer-maincontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+    padding-right: 2%;
+   }
+   .trainer-containerthird{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-top: 5%;
+   margin-left: 5%;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(221, 130, 40);
+    padding-bottom: 2%;
+    border-radius: 15px;
+    
+   }
+   .trainer-containerthird h3{
+    color: #000;
+    background-color: transparent;
+    font-size: 2rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+   }
+   .trainer-containerthird img{
+    width: 90%;
+    height: 45vh;
+    border-radius: 15px;
+   }
+   .trainer-containerthird h4{
+    font-size: 1.5rem;
+    color: #000;
+    background-color: transparent;
+    padding-top: 5px;
+    font-weight: bold;
+   
+   }
+   .trainer-containerthird p{
+    font-size: 18px;
+    color: #000;
+    background-color: transparent;
+    padding-top: 5px;
+    width: 85%;
+   }
+   .trainer-maincontainerthird{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 2%;
+    padding-right: 3%;
+   }
+   .trainer-text{
+    display: none;
+   }
+   
+
+   @media(max-width:1534px){
+    .trainers-details-text{
+        display: none;
+    }
+    .trainer-text{
+        display: block;
+    }
+    .trainer-text h1{
+        text-align: center;
+        font-size: 4rem;
+        color: #fff;
+    }
+    .trainer-container img{
+        width: 90%;
+        height: 30vh;
+        border-radius: 15px;
+       }
+    .trainer-containermain img{
+        width: 90%;
+        height: 30vh;
+        border-radius: 15px;
+       }
+   }
+
+   @media (max-width: 1412px){
+    .trainer-container img{
+        width: 90%;
+        height: 20vh;
+        border-radius: 15px;
+       }
+    .trainer-containermain img{
+        width: 90%;
+        height: 20vh;
+        border-radius: 15px;
+       }
+   }
+   @media (max-width: 894px){
+    .trainer-container h4{
+        font-size: 14px;
+       }
+    .trainer-containermain h4{
+        font-size: 14px;
+       }
+   }
+   @media (max-width: 743px){
+        .trainer-containermain{
+            width: 60%;
+           
+        }
+       .trainer-containermain img{
+        width: 60%;
+        height: 30vh;
+        border-radius: 15px;
+       }
+     
+       .trainer-containermain h3{
+          font-size: 1rem;
+       }
+       .trainer-container{
+        display: none;
+       }
+       
+
+   }
+   @media (max-width: 425px){
+       .trainer-containermain img{
+        height: 15vh;
+       }
+
+
+   }
+  
+   @media (max-width: 362px){
+       .trainer-text h1{
+        font-size: 1.5rem;
+       }
+
+
+   }
+  

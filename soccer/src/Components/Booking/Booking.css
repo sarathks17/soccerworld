@@ -1,0 +1,109 @@
+.trainsection-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .trainsection-text h2{
+    color: #fff;
+    font-size: 3rem;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  .trainsection-text p{
+    color: #fff;
+    font-size: 16px;
+    width: 70%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .training-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3%;
+    padding-bottom: 3%;
+   
+  }
+  .training-items h2{
+    font-size: 2.1rem;
+    padding: 10px;
+    text-align: start;
+    color: #fff;
+    left: 0;
+  }
+  .training-items h4{
+    font-size: 16px;
+    color: #fff;
+  }
+  .training-items button{
+    height: 4.5vh;
+    width: 6.5rem;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+  }
+  .training-items button:hover{
+    background-color: rgb(221, 130, 40);
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+  hr{
+    width: 85%;
+    position: relative;
+    left: 10%;
+  }
+  .all-class-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    height: 100%;
+    padding-bottom: 5%;
+  }
+  .all-class-btn .main-btn{
+    height: 7vh;
+    width: 9.5rem;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background-color: #000;
+  }
+  button .second-btn{
+    height: 5vh;
+    width: 8rem;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out, color 0.3s ease;
+    border-radius: 25px;
+  }
+  button .second-btn:hover{
+    background-color: rgb(221, 130, 40);
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+
+  @media (max-width:746px){
+   .trainsection-text h2{
+    font-size: 2rem;
+   }
+  }
+  @media (max-width: 524px){
+  .trainsection-text h2{
+    font-size: 1rem;
+  }
+  .trainsection-text p{
+    display: none;
+  }
+  .training-items h2{
+    font-size: 1rem;
+  }
+  }

@@ -1,11 +1,12 @@
 import React from 'react'
 import Home from './Pages/Home/Home'
 import {Route, Routes} from 'react-router-dom'
-import About from './Pages/About/About'
-import Join from './Pages/Join/Join'
-import Contact from './Pages/Contact/Contact'
+import Join from './Pages/About/About'
+
 import Login from './Pages/Login/Login'
 import Navbar from './Components/Navbar/Navbar'
+import Classes from './Pages/Classes/Classes'
+import Trainers from './Pages/Trainers/Trainers'
 
 const App = () => {
   return (
@@ -13,11 +14,12 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact-us' element={<Contact/>} />
-        <Route path='/join' element={<Join/>} />
+        <Route path='/classes' element={<Classes/>} />
+        <Route path='/trainers' element={<Trainers/>} />
+        <Route path='/about-us' element={<Join/>} />
         <Route path='/login' element={<Login/>} />
       </Routes>
+     
     </div>
   )
 }
