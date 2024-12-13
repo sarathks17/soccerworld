@@ -126,6 +126,11 @@
    
    }
   }
+  @media(max-width:299px){
+    .email-container input{
+      width: 10rem;
+    }
+ }
   
    
   
