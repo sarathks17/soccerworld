@@ -5,15 +5,16 @@
    
 }
 .navbar-elements{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .soccer-logo img{
     width: 100px;
     height: 80px;
     cursor: pointer;
 }
+
 .headings ul{
    
     display: flex;
@@ -40,20 +41,22 @@
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
+
+   
+   
 }
 .login-section:hover{
     background-color: #000;
     color: #fff;
 }
-.login-section h3 a{
+.login-section h4 a{
    font-size: 1.2rem;
-   
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: transform 0.2s ease-in-out;
 }
-.login-section h3 a:hover{
+.login-section h4 a:hover{
  transform: scale(1.2);
  color: rgb(221, 130, 40);
 
