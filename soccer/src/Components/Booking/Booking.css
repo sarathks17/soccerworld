@@ -63,34 +63,36 @@
     align-items: center;
     justify-content: center;
     padding-top: 2%;
-    height: 100%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   }
-  .all-class-btn .main-btn{
-    height: 7vh;
-    width: 9.5rem;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    background-color: #000;
+  .all-class-btn button{
+    width: 10rem;
+    height: 6vh;
+   color: #fff;
+   font-size: 1.2rem;
+   border-radius: 15px;
+   border: 2px solid #fff;
+   transition: transform 0.2s ease-in-out;
   }
-  button .second-btn{
-    height: 5vh;
-    width: 8rem;
+  .all-class-btn button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  background-color: rgb(221, 130, 40);
+  }
+  .all-class-btn button span{
+    background-color: transparent;
+  }
+  .all-class-btn button a{
+    background-color: transparent;
+    text-decoration: none;
     color: #fff;
-    border: 2px solid #fff;
-    padding: 5px;
-    font-size: 16px;
-    transition: transform 0.2s ease-in-out, color 0.3s ease;
-    border-radius: 25px;
   }
-  button .second-btn:hover{
-    background-color: rgb(221, 130, 40);
-    cursor: pointer;
+  .all-class-btn button span:hover{
     color: #000;
-    font-weight: bold;
-    transform: scale(1.1);
   }
-
+  
   @media (max-width:746px){
    .trainsection-text h2{
     font-size: 2rem;

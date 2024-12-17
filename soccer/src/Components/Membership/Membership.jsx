@@ -12,7 +12,10 @@ const Membership = () => {
         <div className='joinnow-contents'>
            <h1>BECOOME A MEMBER</h1>
             <div className='all-class-btn'>
-<button className='main-btn'><button className='second-btn'>Join Now</button></button>
+            <button>
+  <span>Join Us</span> {/* Replace nested button */}
+</button>
+
 </div>
         </div>
        

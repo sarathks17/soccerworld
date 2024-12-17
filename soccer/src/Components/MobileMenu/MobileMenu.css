@@ -1,0 +1,40 @@
+.mobilemenu-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5%;
+    width: 100%;
+    display: none;
+}
+.mobilemenu-container ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    gap: 20px;
+    text-decoration: none;
+    columns: #fff;
+}
+.mobilemenu-container ul li{
+    font-size: 2rem;
+  
+}
+.mobilemenu-container ul li a{
+    color: #fff;
+ text-decoration: none;
+}
+.mobilemenu-container ul li a:hover{
+    color:  rgb(221, 130, 40);
+}
+@media(max-width:659px){
+    .mobilemenu-container{
+        display: block;
+    }
+}
+@media(max-width:488px){
+    .mobilemenu-container ul li{
+        font-size: 1rem;
+    }
+}

@@ -1,6 +1,14 @@
 import React from 'react'
 import './Booking.css'
+import {useNavigate} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const Booking = () => {
+
+  const navigate = useNavigate();
+
+  const showAllClasses = () => {
+    navigate('/classes')
+  }
   return (
     <div>
         
@@ -29,7 +37,11 @@ const Booking = () => {
      </div>
      <hr/>
      <div className='all-class-btn'>
-      <button className='main-btn'><button className='second-btn'>All Classes</button></button>
+     <button>
+  
+ <Link to='/plans'><span>All Classes</span> </Link>
+</button>
+
      </div>
     </div>
   )

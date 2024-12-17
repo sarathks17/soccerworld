@@ -66,6 +66,9 @@
   font-weight: bold;
   transition: transform 0.2s ease-in-out;
 }
+.leftsection-btn button span{
+  background-color: transparent;
+}
 .leftsection-btn button:hover{
   transform: scale(1.2);
   background-color: rgb(221, 130, 40);
@@ -89,6 +92,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  background-color: transparent;
+}
+.rightsection-btn button span{
   background-color: transparent;
 }
 .rightsection-btn button{

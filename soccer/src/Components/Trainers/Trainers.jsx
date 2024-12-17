@@ -3,7 +3,15 @@ import './Trainers.css'
 import trainerone from '../../assets/traineroneimage.webp'
 import trainertwo from '../../assets/trainertwoimage.webp'
 import trainerthree from '../../assets/trainerthreeimage.webp'
+import { Link } from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 const Trainers = () => {
+
+  const navigate = useNavigate();
+
+  const showAllTrainers = () => {
+    navigate('/trainers')
+  }
   return (
     <div>
       <div className='trainer-text'>
@@ -35,8 +43,11 @@ const Trainers = () => {
 
 
 </div>
-<div className='all-class-btn'>
-<button className='main-btn'><button className='second-btn'>All Trainers</button></button>
+<div className='trainers-btn'>
+<button>
+  <Link to="/trainers"><span>All Trainers</span></Link>
+</button>
+
 </div>
     </div>
     

@@ -8,18 +8,20 @@ import FootballJourney from '../../Components/FootballJourney/FootballJourney'
 import AppDownload from '../../Components/AppDownload/AppDownload'
 import Membership from '../../Components/Membership/Membership'
 import Footer from '../../Components/Footer/Footer'
+import MobileMenu from '../../Components/MobileMenu/MobileMenu'
 const Home = () => {
   return (
 <div>
  
   <VideoPlayer/>
-  <NewsAndUpdates/>
-  <Booking/>
+   <MobileMenu/> 
+    <NewsAndUpdates/> 
+ <Booking/>
   <Trainers/>
-  <FootballJourney/>
+ <FootballJourney/>
   <AppDownload/>
-  <Membership/>
-  <Footer/>
+    <Membership/>
+ <Footer/>
 </div>
      
  
