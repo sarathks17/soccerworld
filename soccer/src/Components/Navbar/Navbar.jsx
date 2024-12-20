@@ -1,18 +1,41 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import {Link} from 'react-router-dom'
 import SoccerLogo from '../../assets/soccerLogo.png'
 import { useNavigate } from 'react-router-dom'
+import userlogo from '../../assets/Userlogo.jpg'
 
-const Navbar = ({setShowLogin,navbarRef }) => {
 
+const Navbar = ({setShowLogin, token, setToken }) => {
   const navigate = useNavigate();
+ const [menu,setMenu] = useState("Home");
 
   const handleHomePage = () => {
+    setMenu("home")
     navigate('/')
   }
+  const logout = () => {
+    localStorage.removeItem("token");
+    setToken("");
+    navigate("/");
+  }
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setToken(localStorage.getItem("token"));
+    };
 
-  const [menu,setMenu] = useState("");
+    window.addEventListener("storage", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
+  }, []);
+
+
+  useEffect(() => {
+    const path = window.location.pathname.slice(1);
+    setMenu(path || "home");
+  }, []);
  
   return (
     <div  className='navbar-container'>
@@ -28,16 +51,18 @@ const Navbar = ({setShowLogin,navbarRef }) => {
               <li> <Link to='/plans' className={ menu === 'plans'?'active':""} onClick={()=>setMenu("plans") }>Plans</Link></li>
               <li></li>
             </ul>
-          
-           
             </div>
-          <div className='login-section'>
-           <button onClick={()=>setShowLogin(true)}>Sign In</button>
-          </div>
-           
-
+{!token ? (
+    <button onClick={() => setShowLogin(true)}>Sign In</button>
+): (
+    <div className="navbar-profile">
+        <img src={userlogo} alt="User Profile" className="profile-img" />
+        <ul className="dropdown-menu">
+            <li onClick={logout} >Logout</li>
+        </ul>
+    </div>
+)}
         </div>
-     
     </div>
   )
 }

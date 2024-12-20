@@ -1,6 +1,5 @@
 import React from 'react'
 import  './NewsAndUpdates.css'
-import footballplaying from '../../assets/footballplaying.mp4'
 const NewsAndUpdates = () => {
   return (
     <>

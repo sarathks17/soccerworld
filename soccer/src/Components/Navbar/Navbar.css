@@ -1,18 +1,44 @@
 
 .navbar-container{
-    background-color: black;
-    height: 80px;
-    
-   
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; 
+  font-family: Arial, sans-serif;
 }
 .navbar-elements{
+    width: 100%;
+    height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
  
 }
+.navbar-elements button{
+    height: 4.5vh;
+    width: 6.5rem;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+.navbar-elements button:hover{
+    transform: scale(1.2);
+    color: #000;
+    background-color: rgb(221, 130, 40);
+    cursor: pointer;
+}
 .soccer-logo img{
-    width: 100px;
+    width: 80px;
     height: 80px;
     cursor: pointer;
 }
@@ -43,9 +69,6 @@
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
-
-   
-   
 }
 .login-section:hover{
     background-color: #000;
@@ -100,6 +123,50 @@
    color: #000;
    cursor: pointer;
 }
+.navbar-profile {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 3px; 
+    right: 45px;
+    background-color: white;
+    border-radius: 4px;
+    list-style: none;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    transition: background-color 0.3s ease;
+    background-color: #fff;
+}
+
+.dropdown-menu li:hover {
+    background-color:  rgb(221, 130, 40);
+    color: #fff;
+}
+.navbar-profile:hover .dropdown-menu {
+    display: block;
+}
+
 
 
 
@@ -131,9 +198,6 @@
     .headings ul{
         padding-right: 24px;
     }
-   /* .login-section {
-        display: none;
-    } */
     .headings ul{
         width: 100%;
     }

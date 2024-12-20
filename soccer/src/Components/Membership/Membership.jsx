@@ -13,7 +13,7 @@ const Membership = () => {
            <h1>BECOOME A MEMBER</h1>
             <div className='all-class-btn'>
             <button>
-  <span>Join Us</span> {/* Replace nested button */}
+  <span>Join Us</span> 
 </button>
 
 </div>

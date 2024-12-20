@@ -1,6 +1,5 @@
 import React from 'react'
 import './FootballJourney.css'
-import soccerimagesix from '../../assets/soccerimagesix.jpg'
 const FootballJourney = () => {
   return (
     <div>

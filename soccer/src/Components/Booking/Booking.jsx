@@ -1,14 +1,11 @@
 import React from 'react'
 import './Booking.css'
-import {useNavigate} from 'react-router-dom'
 import { Link } from 'react-router-dom'
 const Booking = () => {
 
-  const navigate = useNavigate();
 
-  const showAllClasses = () => {
-    navigate('/classes')
-  }
+
+
   return (
     <div>
         
