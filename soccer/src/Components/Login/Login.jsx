@@ -4,7 +4,7 @@ import closeIcon from '../../assets/closeicon.svg';
 import axios from 'axios';
 
 const Login = ({ setShowLogin, setToken }) => {
-  const url = "http://localhost:3001";
+  const url = "https://soccerworld-server.onrender.com";
 
   const [currentState, setCurrentState] = useState("Login");
 
